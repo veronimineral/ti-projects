@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pl" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='style.css' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:500,900,100,300,700,400' rel='stylesheet' type='text/css'>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <title>Pomiar jakości powietrza</title>
+    <script src="script.js"></script>
+  </head>
+
+<body onload="checkCookie();">
+<header>
+  <nav class="stroke">
+    <ul>
+      <li><a href="#" onclick="_addData()" id="addData">Dodaj rekord</a></li>
+      <li><a href="#" onclick="_showList()" id="getData">Pobierz dane</a></li>
+      <li><a href="#" onclick="_getCharts()" id="getChart">Wykres</a></li>
+      <li><a href="#" onclick="_synchData()" id="synchData">Synchronizuj</a></li>
+      <li><a href="#" onclick="_loginPopout()" id="loginInfo">Logowanie</a></li>
+      <li><a href="#" onclick="_registerPopout()" id="registerInfo">Rejestracja</a></li>
+      <li><a href="#" onclick="_logoutUser()" id="logoutInfo">Wyloguj</a></li>
+      <!--li><a href="#" onclick="_del_list()" id="d">usun</a></li-->
+  </ul>
+  </nav>
+</header>
+
+<div id="content" class="content">
+<div id="registerPopout"></div>
+<div id="loginPopout"></div>
+<div id="about" class="about"></div>
+<div id ="data"></div>
+<div id ="response"></div>
+
+<div id="town--buttons"></div>
+<div id=chartContainer class="canvas--container"></div>
+
+<div id="userInfo" class="userInfo"></div>
+<div id="foo">
+  <a href="#doc"><img  src="doc.png" alt="Dokumentacja"  height="40" width="40" onclick="showDoc()"></a>
+</div>
+  <!--footer>
+    <h3 class="footer-text">Copyright Â© Weronika Schabowicz</h3>
+  </footer-->
+</div>
+</body>
+</html>

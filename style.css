@@ -1,0 +1,371 @@
+body {
+  color: #8f8f8f;
+  background: black;
+  font-family: "Cardo", serif;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.hdr {
+  position: relative;
+  background: url("src/header_img.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  padding-top: 110px;
+  min-height: 550px;
+  letter-spacing: 2px;
+  font-family: "Montserrat", sans-serif;
+}
+.hdr h1 {
+  font-size: 50px;
+  line-height: 1.3;
+}
+.hdr h1 span {
+  font-size: 25px;
+  color: #e8f380;
+  border-bottom: 2px solid #e8f380;
+  padding-bottom: 12px;
+  line-height: 3;
+}
+
+h1 {
+  font-size: 30px;
+  line-height: 1.8;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+}
+
+h2{
+  font-size: 25px;
+  line-height: 1.8;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  color: #e8f380;
+}
+
+h3{
+  font-size: 20px;
+  color: #e8f380;
+}
+
+.onhover{
+  font-weight:bold;
+  font-size: 1.2em;
+}
+
+.onhover:hover{
+  color: #e8f380;
+}
+
+nav {
+  float: right;
+  width: 100%;
+  background-color: rgb(34,95,117);
+  margin-top: 230px;
+  font-family: "Cardo", serif;
+}
+
+nav ul {
+  list-style: none;
+  overflow: hidden;
+  text-align: right;
+  float: right;
+  margin-right: 15px;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-left: 35px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  font-size: 17px;
+  color: black;
+}
+
+nav a:hover {
+  color: #e8f380;
+  text-shadow: 0px 0px 20px black;
+}
+
+nav ul:hover {
+  cursor: pointer;
+}
+
+
+ul li {
+  text-align: justify;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+    color: black;
+    text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+    color: black;
+}
+
+.docum:hover {
+  color: #e8f380;
+  text-shadow: 0px 0px 20px black;
+}
+
+.hov:hover{
+  color: #e8f380;
+}
+
+.content {
+  padding: 50px 2% 250px;
+}
+
+.content h1 {
+  color: #e8f380;
+}
+
+.artcl {
+  height: 8px;
+}
+
+h2.effect-underline:after {
+	content: '';
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  height: 1em;
+  width: 20%;
+  margin-left: 30px;
+  border-bottom: 1px solid;
+  margin-top: 15px;
+  opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale(0,1);
+	transform: scale(0,1);
+}
+
+h2.effect-underline:hover:after {
+  opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+p {
+  margin-bottom: 20px;
+  font-size: 17px;
+  line-height: 2;
+  text-align: justify;
+}
+
+.row {
+  width: 100%;
+  max-width: 940px;
+  margin: 0 auto;
+  position: relative;
+  padding: 0 2%;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 8px;
+}
+
+.image {
+  border-radius: 100%;
+  display: flex;
+  flex: 0 0 150px;
+  height: 150px;
+  width: 150px;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.overlay {
+  align-items: center;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: opacity 0.25s;
+  z-index: 1;
+  background-color: rgba(34,95,117, 0.7);
+  color:  rgb(232, 243, 128);
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+  text-shadow: 0px 0px 30px black;
+
+}
+
+.overlay:hover {
+  opacity: 1;
+}
+
+.about {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.8);
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+.aboutPlanet {
+  background-color: black;
+  margin: 15% auto;
+  padding: 15px;
+  border: 1px solid rgb(232, 243, 128);
+  width: 80%;
+  box-shadow: 0px 0px 50px 12px rgba(232, 243, 128, 0.4);
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover, .close:focus {
+  color: rgb(34,95,117);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.mybtn {
+  color: #aaa !important;
+  text-transform: uppercase;
+  background: black;
+  padding: 10px;
+  border: 2px solid rgb(232, 243, 128) !important;
+  display: inline-block;
+  font-family: "Cardo", serif;
+}
+
+.mybtn:hover {
+  color: black !important;
+  background: rgb(232, 243, 128);
+  transition: all 0.4s ease 0s;
+  text-shadow: 0px 0px 20px black;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid rgba(232, 243, 128, 0.6);
+}
+
+tr:hover {
+  background-color: rgb(34,95,117);
+  color: black;
+}
+
+.photo {
+  margin: 5px;
+  float: left;
+  height: 200px;
+  width: 200px;
+  margin-bottom: 100px;
+}
+
+.sounds {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.container {
+  width: 180px;
+  position: absolute;
+  visibility: hidden;
+  color: #aaa;
+  z-index: 1;
+}
+
+.photo:hover .container {
+  visibility: visible;
+}
+
+.desc{
+  text-align: center;
+}
+
+.counter-container {
+  left: 20px;
+  bottom: 20px;
+  align-items: center;
+  text-align: center;
+}
+
+#foo {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin-right: 50px;
+  margin-bottom: 30px;
+  -webkit-transition: width 1s, height 1s, -webkit-transform 1s; /* Safari */
+  transition: width 1s, height 1s, transform 1s;
+}
+
+#foo:hover {
+  -ms-transform: rotate(360deg); /* IE 9 */
+  -webkit-transform: rotate(360deg); /* Safari */
+  transform: rotate(360deg);
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 5px;
+  background-color: rgba(34,95,117,0.6);
+  position: relative;
+  clear: both;
+}
+
+footer p {
+  color: white;
+  text-align: center;
+  font-size: 12px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.doc--title{
+  font-weight: bold;
+  color: #e7f380;
+  font-size: 27px;
+  text-transform: uppercase;
+  text-align: center;
+}

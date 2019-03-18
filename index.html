@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pl" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <link href='style.css' rel='stylesheet' type='text/css'>
+    <title>Weronika Schabowicz - PROJEKT 1</title>
+    <link rel="icon" href="src/icon.png">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script>
+    </head>
+<body>
+
+<header id="hdr" class="hdr">
+      <h1><span>Weronika Schabowicz</span><br>UKŁAD SŁONECZNY</h1>
+      <nav id="navbar">
+          <ul>
+              <li><a href="#home">O układzie</a></li>
+              <li><a href="#simul">Ruch planet</a></li>
+              <li><a href="http://6schabowiczindex.eu-gb.mybluemix.net/" target="_blank" >Autor</a></li>
+              <li><div class="docum" onclick="showDoc()">Dokumentacja</div></li>
+          </ul>
+      </nav>
+</header>
+
+<article>
+<div id="content" class="content">
+    <div id="home" class="artcl"></div>
+    <div class="wrapper"><h2 class="effect-underline">Układ Słoneczny</h2></div>
+    <p><span style="font-weight: bold; color: #e8f380;">Układ Słoneczny</span> to niewielkich rozmiarów gwiazda, osiem pełnoprawnych planet, kilka znanych planet karłowatych, pył, kurz i miriady kosmicznego gruzu o wielkości mrówki, Europy lub wszystkiego o średnicy pomiędzy.
+    Powiązanie między wszystkimi obiektami w układzie występuje za pomocą jednej z najsłabszych sił: sile grawitacji. To ona wiąże ze sobą wszystko, co posiada masę.</p>
+    <p>Najbardziej zewnętrzna część Układu Słonecznego to <span style="font-weight:bold; color: #e8f380;">Obłok Oorta</span> - kulista chmura obiektów skalno-lodowych, nie przekraczających rozmiarami 1 km. Rozpościera się od około 2000 do 50000 AU od Słońca.
+    Całkowita masa wszystkich obiektów z Obłoku nie przekracza pięciu mas Ziemi. Obłok Oorta kończy się bardzo płynnie przechodząc w Materię Międzygwiezdną, stąd niektóre modele zakładają, że sięga on nawet 200000 AU, czyli około 3 lat świetlnych.</p>
+    <p>Bliżej Słońca Obłok Oorta przechodzi w <span style="font-weight: bold; color: #e8f380;">Dysk Rozproszony</span>. Jest to najbardziej zewnętrzna część Pasa Kuipera. Dysk Rozproszony zawiera obiekty kandydujące do zostania kometą długookresową. Największym obiektem wchodzącym w jego skład jest Eris - planeta karłowata, nieco większa od Plutona.</p>
+    <p>Dalej docieramy do wspomnianego wcześniej <span style="font-weight: bold; color: #e8f380;">Pasa Kuipera</span>. Jest to obszar podobny do Pasa Planetoid - jest jednak bardziej rozległy. Ma rozmiar plasujący się pomiędzy 30 a 50 j.a., tj. od Neptuna aż po Dysk Rozproszony. Jest postaci grubego dysku otaczającego układ planetarny i zawiera kosmiczny pył oraz planetoidy. Obecnie do obiektów Pasa Kuipera zalicza się nawet Plutona wraz z jego trzema satelitami.</p>
+    <p>Bliżej znajdują się planety: osiem planet właściwych. Gazowe olbrzymy: <span style="font-weight: bold; color: #e8f380;">Neptun, Uran, Saturn i Jowisz</span>, pas planetoid i najbliżej leżące, małe planety skaliste: <span style="font-weight: bold; color: #e8f380;">Mars, Ziemia, Wenus i Merkury</span>.</p>
+    <p>W centrum układu znajduje się <span style="font-weight: bold; color: #e8f380;">Słońce</span> - pojedyncza gwiazda będąca żółtym karłem, zawierająca około 99,86% łącznej masy Układu Słonecznego.</p>
+    <p>Wspomniana wcześniej jednostka astronomiczna AU to średnia odległość od Ziemi do Słońca.</p>
+    <span class="hov">$$ {1AU=1,496\cdot10^8km} $$</span>
+    <p class="onhover">By dowiedzieć się więcej o wybranej planecie, kliknij w nią!</p>
+
+    <div class="row">
+      <div class="column">
+        <a class="image" ><div class="overlay" onclick="showAbout1()">Merkury</div><img src="src/mercury_img.png" alt="merkury"/></a>
+      </div>
+      <div class="column">
+      <a class="image" ><div class="overlay" onclick="showAbout2()">Wenus</div><img src="src/venus_img.jpg" alt="wenus"/></a>
+      </div>
+      <div class="column">
+        <a class="image"><div class="overlay" onclick="showAbout3()">Ziemia</div><img src="src/eath_img.png" alt="ziemia"/></a>
+      </div>
+      <div class="column">
+        <a class="image"><div class="overlay"  onclick="showAbout4()">Mars</div><img src="src/mars_img.png" alt="mars"/></a>
+      </div>
+      <div class="column">
+        <a class="image"><div class="overlay"  onclick="showAbout5()">Jowisz</div><img src="src/jupiter_img.png" alt="jowisz"/></a>
+      </div>
+      <div class="column">
+        <a class="image"><div class="overlay" onclick="showAbout6()">Saturn</div><img src="src/saturn_img.png" alt="saturn"/></a>
+      </div>
+      <div class="column">
+        <a class="image"><div class="overlay" onclick="showAbout7()">Uran</div><img src="src/uranus_img.png" alt="uran"/></a>
+      </div>
+      <div class="column">
+        <a class="image"><div class="overlay" onclick="showAbout8()">Neptun</div><img src="src/neptune_img.png" alt="neptun"/></a>
+      </div>
+    </div>
+
+    <div id="about" class="about"></div>
+
+    <div id="simul" class="artcl"></div>
+    <div class="wrapper"><h2 class="effect-underline">O ruchu planet</h2></div>
+    <p>Ruchy planet wykazują ciekawe prawidłowości:</p>
+      <ul>
+        <li>Orbity wszystkich planet leżą mniej więcej w jednej płaszczyźnie, która dość dobrze pokrywa się z płaszczyzną równika słonecznego.</li>
+        <li>Wszystkie planety poruszają się w swoim ruchu orbitalnym w tym samym kierunku, zgodnym z kierunkiem obrotu Słońca.</li>
+        <li>Większość planet obraca się dookoła swej osi w tym samym kierunku, zgodnym z kierunkiem ich ruchu orbitalnego. Wyjątkowe pod tym względem są Uran i Wenus – wirują one w kierunku przeciwnym.</li>
+      </ul>
+      Trzy prawa rządzące ruchem planet sformułowane zostały przez Johannesa Keplera. Są one uniwersalne – opisują zarówno ruch planet wokół Słońca, jak i ruch komet i planetoid okrążających Słońce, a także księżyców czy satelitów okrążających dowolną planetę.
+      <h3 style="color: #e8f380;">I PRAWO KEPLERA</h3>
+        Każda planeta krąży po orbicie eliptycznej, a Słońce znajduje się w jednym z dwóch ognisk elipsy.<br/>
+        Planeta obiega Słońce po orbicie eliptycznej – to znaczy, że odległość r planeta – Słońce, jako funkcja kąta φ między promieniem wodzącym planety i kierunkiem Słońce – peryhelium planety, dana jest równaniem:
+        <span class="hov">$$ {r(\phi) =\frac{p}{1+e \cdot cos(\phi)}} $$</span>
+        <h3 style="color: #e8f380;">II PRAWO KEPLERA</h3>
+        Promień wodzący poprowadzony ze środka Słońca do środka planety zakreśla równe pola powierzchni w równych odstępach czasu.<br/>
+        Aby planeta mogła zakreślać równe pola powierzchni w równych odstępach czasu, to musi mieć mniejszą prędkość, gdy jest w aphelium (punkcie orbity planety najbardziej oddalonym od Słońca), a większą gdy jest w peryhelium(punkcie orbity planety najmniej oddalonym od Słońca). Gdy C - pewna stała, drugie prawo możemy zapisać w postaci wzoru:<br/>
+        <span class="hov">$$ {\Delta S=\frac{1}{2}r^2\frac{d\phi}{dt}=C} $$</span>
+        <h3 style="color: #e8f380;">III PRAWO KEPLERA</h3>
+        Sześciany wielkich półosi orbit dwóch dowolnych planet obiegających tę samą gwiazdę mają się do siebie tak, jak kwadraty ich okresów obiegu.
+        <span class="hov">  $$ {\frac{a^3}{T^2} = const} $$</span>
+        W przypadku dwóch planet krążących po orbitach kołowych – o promieniach R1 i R2 – otrzymujemy związek:
+        <span class="hov">$$ {\frac{R_1^3}{R_2^3} = \frac{T_1^2}{T_2^2}} $$</span>
+        gdzie T1, T2 - okresy obiegów planet.
+    <p>Poniższa symulacja w uproszczony sposób obrazuje ruch planet wokół Słońca. Skala rozmiarów i odległości nie została zachowana.<br/>
+      Animacja wykonana została w technologii canvas.</p>
+    <div style="width: 100%; text-align: center;">
+      <canvas id="canvas" width="850" height="850"></canvas>
+      <div class="counter-container">
+        <p style="color: #e8f380;">Liczba obiegów Ziemi wokół Słońca (lat):  <output id="result"></output></p>
+      <button class="mybtn" onclick="startWorker()">Zacznij odliczanie</button>
+      <button class="mybtn" onclick="stopWorker()">Zatrzymaj licznik</button>
+      </div>
+    </div>
+</div> <!-- content -->
+</article>
+
+<div id="foo">
+  <a href="#hdr" class="rotate"><img src="src/top.png" alt="Go up"  height="70" width="70"></a>
+</div>
+
+<footer>
+  <p>Copyright © Weronika Schabowicz</p>
+</footer>
+
+<script src="scripts.js"></script>
+</body>
+</html>

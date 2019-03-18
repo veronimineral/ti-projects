@@ -1,0 +1,275 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+select {
+    background: #e5e5e5;
+    border: none;
+    font-size: 14px;
+    height: 29px;
+    padding: 5px;
+    width: 30%;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+nav {
+    width: 80%;
+    margin: 0 auto;
+    background: transparent;
+    padding: 3px 0;
+    box-shadow: 0px 5px 0px #dedede;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #aaa;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 0 10px;
+    position: relative;
+}
+
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+    transition: all .5s;
+}
+
+nav ul li a:hover {
+    color: #555;
+}
+
+nav.stroke ul li a:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: #333;
+    height: 1px;
+}
+
+nav.stroke ul li a:hover:after {
+    width: 100%;
+}
+
+.content,
+#data,
+#response {
+    margin-top: 10px;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+input[type=button] {
+    background-color: #aaa;
+    border: none;
+    color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+    margin: 2px 2px;
+    cursor: pointer;
+}
+
+input[type=button]:hover {
+    background-color: #A44B4B;
+}
+
+input[type=text],
+input[type=password] {
+    display: inline-block;
+    text-align: center;
+    color: white;
+    background-color: #515151;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px;
+    width: 50%;
+}
+
+input[type=date],
+input[type=time] {
+
+    color: white;
+    background-color: #515151;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px;
+    width: 50%;
+}
+
+form[name=add] {
+    width: 40%;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.9);
+    margin: 20px auto;
+    color: black;
+    border-radius: 15px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+table {
+    border-collapse: collapse;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f5f5f5;
+    text-transform: uppercase;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+.canvas--container {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+.pop {
+    background-color: rgba(255, 255, 255, 0.9);
+    margin: 50px auto;
+    color: black;
+    border-radius: 10px;
+    width: 80%;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    padding: 10px;
+
+}
+
+.popUser {
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    margin: 200px auto;
+    color: black;
+    border-radius: 10px;
+    width: 40%;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.small--text {
+    font-size: 12px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.hiper {
+    font-weight: 700;
+}
+
+.hiper:hover {
+    cursor: pointer;
+    color: #A44B4B;
+}
+
+
+#userInfo {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #222222;
+    font-size: 12px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #A44B4B;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.doc--title {
+    font-weight: bold;
+    color: #A44B4B;
+    font-size: 27px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#loginPopout,
+#logoutInfo,
+#getData,
+#getChart,
+#synchData,
+#town--buttons {
+    display: none;
+}
+
+#foo {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.footer-text {
+    color: #888888;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 10px;
+    float: center;
+}
+
+footer {
+    border-top: solid #A44B4B;
+    border-width: 6px;
+    background: #474747;
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    height: 40px;
+}
